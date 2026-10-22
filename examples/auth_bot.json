@@ -1,0 +1,8 @@
+{
+    "twitchid": 123456789,
+    "username": "your_twitch_bot_username",
+    "client_id": "your_twitch_application_client_id",
+    "client_secret": "your_twitch_application_client_secret",
+    "sessionSecret": "replace_with_a_long_random_session_secret",
+    "redirect_uri": "https://localhost:8081/kiwisbot/"
+}

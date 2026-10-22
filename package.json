@@ -1,0 +1,30 @@
+{
+  "name": "twitchauth",
+  "version": "1.0.0",
+  "description": "a simple twitch to database delivery system for refresh token management",
+  "homepage": "https://github.com/mikethemadkiwi/twitchauth#readme",
+  "bugs": {
+    "url": "https://github.com/mikethemadkiwi/twitchauth/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikethemadkiwi/twitchauth.git"
+  },
+  "license": "ISC",
+  "author": "mikethemadkiwi",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.3.0",
+    "express-session": "^1.19.0",
+    "got": "^16.1.0",
+    "mysql": "^2.18.1",
+    "pug": "^3.0.4",
+    "socket.io": "^4.8.4",
+    "ws": "^8.22.0"
+  }
+}

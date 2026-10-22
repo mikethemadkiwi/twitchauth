@@ -1,0 +1,24 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title [Kiwisbot]
+    link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous")
+    link(rel="stylesheet" href="../rootpage.css" crossorigin="anonymous")
+  body.status-page
+    main
+      h1 Kiwisbot - Chatbot Dashboard
+      img(src="../mike.png" width="354")
+      p: a(class="btn btn-primary" href="/kiwisbot") Login To Twitch
+      .grid
+        .card
+          span.label Database connection
+          span(class=`value ${dbStatus.connection}`)= dbStatus.connection
+        .card
+          span.label Database sanity check
+          span(class=`value ${dbStatus.sanityCheck.replace(' ', '-')}`)= dbStatus.sanityCheck
+        .card
+          span.label Master Twitch Auth
+          span(class=`value ${masterAuthIsNull ? 'disconnected' : 'connected'}`)= masterAuthIsNull ? 'Not active' : 'Active'
+      p #[a(href="/health") /health] #[a(href="/bofh") /bofh]

@@ -1,0 +1,18 @@
+{
+    "helix": {
+        "user:read:email": "Read the authorized user's email address.",
+        "user:read:chat": "Read the authorized user's chat event packets.",
+        "user:write:chat": "Write in the user's channel using permissions.",
+        "user:bot": "Authorize this user as a bot account for chat."
+    },
+    "kraken": {
+        "user_read": "Read nonpublic user information, like email address."
+    },
+    "drops": {
+        "viewing_activity_read": "Record viewer activity."
+    },
+    "chat": {
+        "chat:read": "View live stream chat and rooms messages.",
+        "chat:edit": "Send live stream chat and rooms messages."
+    }
+}
